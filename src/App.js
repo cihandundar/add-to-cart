@@ -2,7 +2,7 @@ import React from "react";
 function App() {
   return (
     <div className="App">
-      <h1>YaRıYa KaDaR DeqiL YaRaYa KaDaR LeN Aq.</h1>
+      <h1>123</h1>
     </div>
   );
 }
