@@ -12,12 +12,14 @@
   align-items: center;
   justify-content: space-between;
   &__logo {
-    display: flex;
-    align-items: center;
-    > h2 {
-      margin-left: 10px;
-      color: #f9f9f9;
-      font-family: "Fuzzy Bubbles", cursive;
+    > a {
+      display: flex;
+      align-items: center;
+      > h2 {
+        margin-left: 10px;
+        color: #f9f9f9;
+        font-family: "Fuzzy Bubbles", cursive;
+      }
     }
     &__circle {
       width: 60px;

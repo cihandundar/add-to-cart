@@ -31,10 +31,12 @@ const Navbar = () => {
       <div className="header__container">
         <nav className="nav">
           <div className="nav__logo">
-            <span className="nav__logo__circle">
-              <Logo />
-            </span>
-            <h2>Unemployed Youth</h2>
+            <Link to="/">
+              <span className="nav__logo__circle">
+                <Logo />
+              </span>
+              <h2>Unemployed Youth</h2>
+            </Link>
           </div>
           <ul className="nav__list">
             {links.map((link) => (
