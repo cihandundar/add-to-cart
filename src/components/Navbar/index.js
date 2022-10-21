@@ -8,19 +8,8 @@ const Navbar = () => {
       name: "Home",
       path: "/",
     },
-
     {
       id: 2,
-      name: "About",
-      path: "/",
-    },
-    {
-      id: 3,
-      name: "Contact",
-      path: "/",
-    },
-    {
-      id: 3,
       name: "Sign up",
       path: "/",
     },
