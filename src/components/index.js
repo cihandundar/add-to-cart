@@ -1,3 +1,3 @@
 import Navbar from "./Navbar";
-
-export { Navbar };
+import ShoppingItem from "./ShoppingItem";
+export { Navbar, ShoppingItem };
