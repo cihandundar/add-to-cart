@@ -25,9 +25,12 @@
   }
   &__title {
     > h4 {
-      font-size: 1.2rem;
       text-transform: uppercase;
       margin-block: 10px;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
   }
   &__text {
@@ -38,6 +41,7 @@
       -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
       overflow: hidden;
+      font-size: 15px;
     }
   }
 
@@ -54,5 +58,6 @@
     color: #f9f9f9;
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
+    font-weight: 300;
   }
 }
