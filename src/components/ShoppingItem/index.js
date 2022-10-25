@@ -23,6 +23,7 @@ const ShoppingItem = () => {
           <div className="content__text">
             <p>{shopping.description}</p>
           </div>
+          <span>{shopping.price} $</span>
         </div>
       ))}
     </div>
