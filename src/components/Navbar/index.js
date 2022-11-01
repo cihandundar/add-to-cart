@@ -1,6 +1,7 @@
 import React from "react";
 import { Logo } from "assets/icons";
 import { Link } from "react-router-dom";
+import ShoppingIcon from "assets/icons/ShoppingIcon";
 const Navbar = () => {
   const links = [
     {
@@ -33,6 +34,9 @@ const Navbar = () => {
                 <Link to={link.path}>{link.name}</Link>
               </li>
             ))}
+            <span className="nav__icon">
+              <ShoppingIcon />
+            </span>
           </ul>
         </nav>
       </div>
