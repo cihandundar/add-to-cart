@@ -1,5 +1,4 @@
 import React from "react";
-import { Logo } from "assets/icons";
 import { Link } from "react-router-dom";
 import ShoppingIcon from "assets/icons/ShoppingIcon";
 const Navbar = () => {
@@ -22,9 +21,6 @@ const Navbar = () => {
         <nav className="nav">
           <div className="nav__logo">
             <Link to="/">
-              <span className="nav__logo__circle">
-                <Logo />
-              </span>
               <h2>Unemployed Youth</h2>
             </Link>
           </div>
