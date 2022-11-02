@@ -40,6 +40,9 @@ const Product = () => {
           <div className="star">
             <Star />
           </div>
+          <div className="content__btn">
+            <button>Add to Cart</button>
+          </div>
         </div>
       ))}
     </div>
