@@ -1,27 +1,28 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import Recep from "assets/images/recep.gif";
+import Spinner from "assets/images/spinner.gif";
+import { Star } from "assets/icons";
 
-const ShoppingItem = () => {
-  const [item, setShoppingitem] = useState([]);
+const Product = () => {
+  const [item, setProduct] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
       axios
         .get(`https://fakestoreapi.com/products`)
-        .then((response) => setShoppingitem(response.data))
+        .then((response) => setProduct(response.data))
         .then(() => {
           setLoading(false);
         });
-    }, 3600);
+    }, 1300);
   }, []);
 
   return (
     <div className="container">
       {loading && (
         <div className="container__loading">
-          <img src={Recep} alt="" />
+          <img src={Spinner} alt="" />
         </div>
       )}
       {item.map((shopping) => (
@@ -36,10 +37,16 @@ const ShoppingItem = () => {
             <p>{shopping.description}</p>
           </div>
           <span>{shopping.price} $</span>
+          <div className="star">
+            <Star />
+          </div>
+          <div className="content__btn">
+            <button>Add to Cart</button>
+          </div>
         </div>
       ))}
     </div>
   );
 };
 
-export default ShoppingItem;
+export default Product;
