@@ -12,7 +12,7 @@ const Navbar = () => {
     {
       id: 2,
       name: "Sign up",
-      path: "/",
+      path: "/login",
     },
   ];
 
@@ -35,7 +35,9 @@ const Navbar = () => {
               </li>
             ))}
             <span className="nav__icon">
-              <ShoppingIcon />
+              <Link to="/basket">
+                <ShoppingIcon />
+              </Link>
             </span>
           </ul>
         </nav>
