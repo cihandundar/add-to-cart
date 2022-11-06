@@ -8,15 +8,14 @@ const Product = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
-      axios
-        .get(`https://fakestoreapi.com/products`)
-        .then((response) => setProduct(response.data))
-        .then(() => {
-          setLoading(false);
-        });
-    }, 1300);
+    axios
+      .get(`https://fakestoreapi.com/products`)
+      .then((response) => setProduct(response.data));
   }, []);
+
+  setTimeout(() => {
+    setLoading(false);
+  }, 1300);
 
   return (
     <div className="container">
