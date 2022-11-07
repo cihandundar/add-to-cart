@@ -24,18 +24,18 @@ const Product = () => {
           <img src={Spinner} alt="" />
         </div>
       )}
-      {item.map((shopping) => (
-        <div key={shopping.id} className="content">
+      {item?.map((shopping) => (
+        <div key={shopping?.id} className="content">
           <div className="content__image">
-            <img src={shopping.image} alt="" />
+            <img src={shopping?.image} alt="" />
           </div>
           <div className="content__title">
-            <h4>{shopping.title}</h4>
+            <h4>{shopping?.title}</h4>
           </div>
           <div className="content__text">
-            <p>{shopping.description}</p>
+            <p>{shopping?.description}</p>
           </div>
-          <span>{shopping.price} $</span>
+          <span>{shopping?.price} $</span>
           <div className="star">
             <Star />
           </div>

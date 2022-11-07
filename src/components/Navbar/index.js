@@ -25,9 +25,9 @@ const Navbar = () => {
             </Link>
           </div>
           <ul className="nav__list">
-            {links.map((link) => (
-              <li key={link.id} className="nav__link">
-                <Link to={link.path}>{link.name}</Link>
+            {links?.map((link) => (
+              <li key={link?.id} className="nav__link">
+                <Link to={link?.path}>{link?.name}</Link>
               </li>
             ))}
             <span className="nav__icon">
