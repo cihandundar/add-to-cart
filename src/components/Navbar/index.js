@@ -10,6 +10,11 @@ const Navbar = () => {
     },
     {
       id: 2,
+      name: "Product",
+      path: "/product",
+    },
+    {
+      id: 3,
       name: "Sign up",
       path: "/login",
     },
