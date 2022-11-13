@@ -3,7 +3,7 @@ import { ProductItem } from "components";
 
 const Product = () => {
   return (
-    <div>
+    <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
       <ProductItem />
     </div>
   );
