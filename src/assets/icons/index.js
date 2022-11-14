@@ -1,4 +1,5 @@
 import ShoppingIcon from "./ShoppingIcon";
-import Star from "./Star";
+import GithubIcon from "./GithubIcon";
+import StarIcon from "./StarIcon";
 
-export { ShoppingIcon, Star };
+export { ShoppingIcon, GithubIcon, StarIcon };
