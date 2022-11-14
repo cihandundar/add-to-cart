@@ -1,5 +1,5 @@
 import React from "react";
-
+import GithubIcon from "assets/icons/GithubIcon";
 const Footer = () => {
   return (
     <footer className="footer">
@@ -11,6 +11,15 @@ const Footer = () => {
             rel="noopener noreferrer"
           >
             road to happiness
+          </a>
+        </div>
+        <div className="footer__icon">
+          <a
+            href="https://github.com/cihandundar/add-to-cart"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <GithubIcon />
           </a>
         </div>
       </div>
