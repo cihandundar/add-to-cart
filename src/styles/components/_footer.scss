@@ -5,7 +5,8 @@
   &__container {
     max-width: 75rem;
     margin: 0 auto;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
   }
   &__text {
     > a {
