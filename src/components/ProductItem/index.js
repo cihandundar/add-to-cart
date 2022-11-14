@@ -1,7 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Spinner from "assets/images/spinner.gif";
-import { Star } from "assets/icons";
 import { Link } from "react-router-dom";
 
 const Product = () => {
@@ -16,7 +15,7 @@ const Product = () => {
 
   setTimeout(() => {
     setLoading(false);
-  }, 1300);
+  }, 700);
 
   return (
     <div className="container">
@@ -39,9 +38,6 @@ const Product = () => {
                 <p>{shopping?.description}</p>
               </div>
               <span>{shopping?.price} $</span>
-              <div className="star">
-                <Star />
-              </div>
             </div>
           </Link>
           <div className="btn">
