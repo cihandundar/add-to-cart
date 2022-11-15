@@ -1,7 +1,7 @@
 import Home from "./Home";
-import Basket from "./Basket";
+import Cart from "./Cart";
 import Login from "./Login";
 import Product from "./Product";
 import ProductDetails from "./ProductDetails";
 import Error from "./Error";
-export { Home, Basket, Login, Product, ProductDetails, Error };
+export { Home, Cart, Login, Product, ProductDetails, Error };

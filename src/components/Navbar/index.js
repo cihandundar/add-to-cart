@@ -36,7 +36,7 @@ const Navbar = () => {
               </li>
             ))}
             <span className="nav__icon">
-              <Link to="/basket">
+              <Link to="/cart">
                 <ShoppingIcon />
               </Link>
             </span>
