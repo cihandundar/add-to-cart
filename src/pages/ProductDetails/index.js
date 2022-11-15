@@ -28,19 +28,16 @@ const ProductDetails = () => {
           <div className="details__right__price">
             <p>{productData?.price} $</p>
             <div className="details__right__rating">
-              <div style={{ display: "flex" }}>
+              <div style={{ display: "flex", justifyContent: "flex-end" }}>
                 <span>{productData?.rating?.rate}</span>
                 <div
                   style={{
                     position: "relative",
-                    top: "5px",
+                    top: "2px",
                     marginInline: "10px",
                   }}
                   className="details__right__rating__icon"
                 >
-                  <StarIcon />
-                  <StarIcon />
-                  <StarIcon />
                   <StarIcon />
                 </div>
               </div>
