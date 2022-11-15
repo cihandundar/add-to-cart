@@ -29,7 +29,7 @@ const Product = () => {
           <Link to={`/products/${shopping?.id}`}>
             <div className="wrapper">
               <div className="wrapper__image">
-                <img src={shopping?.image} alt="" />
+                <img src={shopping?.image} alt={shopping?.name} />
               </div>
               <div className="wrapper__title">
                 <h4>{shopping?.title}</h4>
