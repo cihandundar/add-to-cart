@@ -15,7 +15,7 @@ const Navbar = () => {
     },
     {
       id: 3,
-      name: "Sign up",
+      name: "Login / Register",
       path: "/login",
     },
   ];
