@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import ShoppingIcon from "assets/icons/ShoppingIcon";
+import CartContext from "context/Context";
 const Navbar = () => {
+  const context = useContext(CartContext);
+
+  console.log(context.state.cart.length);
+
   const links = [
     {
       id: 1,
