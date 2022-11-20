@@ -18,7 +18,7 @@ const Cart = () => {
                 <img src={item?.image} alt="" />
               </div>
               <div className="cart__content__title">
-                <h3>{item?.title}</h3>
+                <h4>{item?.title}</h4>
                 <span>Price : $ {item?.price}</span>
                 <div className="cart__price">
                   <p>
@@ -33,7 +33,6 @@ const Cart = () => {
                 <Increase />
               </button>
               <span>{item?.count}</span>
-
               <button onClick={() => decrease(item.id)}>
                 <Descrease />
               </button>
