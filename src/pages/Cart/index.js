@@ -1,7 +1,7 @@
 import React from "react";
 import CartContext from "context/Context";
 import { useContext } from "react";
-import { Descrease, Increase } from "assets/icons";
+import { DescreaseIcon, IncreaseIcon } from "assets/icons";
 
 const Cart = () => {
   const context = useContext(CartContext);
@@ -30,11 +30,11 @@ const Cart = () => {
             </div>
             <div className="cart__btn">
               <button onClick={() => increase(item.id)}>
-                <Increase />
+                <IncreaseIcon />
               </button>
               <span>{item?.count}</span>
               <button onClick={() => decrease(item.id)}>
-                <Descrease />
+                <DescreaseIcon />
               </button>
             </div>
           </div>
