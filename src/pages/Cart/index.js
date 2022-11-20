@@ -6,7 +6,7 @@ import { useContext } from "react";
 
 const Cart = () => {
   const context = useContext(CartContext);
-
+  const { decrease, increase } = useContext(CartContext);
   console.log(context.state.cart.map((item) => item));
 
   return (
@@ -20,7 +20,7 @@ const Cart = () => {
               </div>
               <div className="cart__content__title">
                 <h3>{item?.title}</h3>
-                <span>$ {item?.price}</span>
+                <span>Price : $ {item?.price}</span>
                 <div className="cart__price">
                   <p>
                     Subtotal ( {item?.count} items ) : $
@@ -30,12 +30,12 @@ const Cart = () => {
               </div>
             </div>
             <div className="cart__btn">
-              <button>
+              <button onClick={() => increase(item.id)}>
                 <Increase />
               </button>
               <span>{item?.count}</span>
 
-              <button>
+              <button onClick={() => decrease(item.id)}>
                 <Descrease />
               </button>
             </div>

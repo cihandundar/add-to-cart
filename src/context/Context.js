@@ -30,8 +30,32 @@ export function CartProvider({ children }) {
     localStorage.setItem("cartItems", JSON.stringify(state.cart));
   };
 
+  const increase = (id) => {
+    setState({
+      ...state,
+      cart: state.cart.map((cartItem) =>
+        cartItem.id === id
+          ? { ...cartItem, count: cartItem.count + 1 }
+          : cartItem
+      ),
+    });
+  };
+
+  const decrease = (id) => {
+    setState({
+      ...state,
+      cart: state.cart.map((cartItem) =>
+        cartItem.id === id
+          ? { ...cartItem, count: cartItem.count > 1 ? cartItem.count - 1 : 1 }
+          : cartItem
+      ),
+    });
+  };
+
   return (
-    <CartContext.Provider value={{ state: state, addToCart }}>
+    <CartContext.Provider
+      value={{ state: state, addToCart, increase, decrease }}
+    >
       {children}
     </CartContext.Provider>
   );
