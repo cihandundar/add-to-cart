@@ -1,11 +1,11 @@
 import React from "react";
 import CartContext from "context/Context";
 import { useContext } from "react";
-import { DescreaseIcon, IncreaseIcon } from "assets/icons";
+import { DescreaseIcon, IncreaseIcon, RemoveIcon } from "assets/icons";
 
 const Cart = () => {
   const context = useContext(CartContext);
-  const { decrease, increase } = useContext(CartContext);
+  const { decrease, increase, removeFromCart } = useContext(CartContext);
   console.log(context.state.cart.map((item) => item));
 
   return (
@@ -37,6 +37,9 @@ const Cart = () => {
                 <DescreaseIcon />
               </button>
             </div>
+            <button onClick={() => removeFromCart(item.id)} className="remove">
+              <RemoveIcon />
+            </button>
           </div>
         ))}
       </div>
