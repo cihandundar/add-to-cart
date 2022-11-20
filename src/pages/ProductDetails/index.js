@@ -2,8 +2,10 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import { StarIcon } from "assets/icons";
-
+import { useContext } from "react";
+import CartContext from "context/Context";
 const ProductDetails = () => {
+  const { addToCart } = useContext(CartContext);
   const [productData, setProductData] = useState({});
   const { id } = useParams();
 
@@ -50,7 +52,7 @@ const ProductDetails = () => {
             <p>{productData?.description}</p>
           </div>
           <div className="details__right__btn">
-            <button>Add to Cart</button>
+            <button onClick={() => addToCart(productData)}>Add to Cart</button>
           </div>
         </div>
       </div>
