@@ -14,6 +14,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
   &__logo {
     > a {
       > h2 {
@@ -36,7 +37,9 @@
   }
   &__link {
     font-weight: 200;
-
+    &:last-child {
+      margin-right: 50px;
+    }
     &:not(:last-child) {
       margin-right: 2.5rem;
     }
@@ -62,5 +65,25 @@
 
   &__icon {
     cursor: pointer;
+    position: absolute;
+    right: 0;
+    > a {
+      position: relative;
+      > span {
+        position: absolute;
+        right: 1px;
+        top: -20px;
+        background-color: #f9f9f9;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        > p {
+          font-size: 13px;
+        }
+      }
+    }
   }
 }

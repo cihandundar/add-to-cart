@@ -40,15 +40,15 @@ const Navbar = () => {
                 <Link to={link?.path}>{link?.name}</Link>
               </li>
             ))}
-            <span className="nav__icon">
-              <Link to="/cart">
-                <span className="nav__icon__length" style={{ color: "white" }}>
-                  {context?.state?.cart?.length}
-                </span>
-                <ShoppingIcon />
-              </Link>
-            </span>
           </ul>
+          <span className="nav__icon">
+            <Link to="/cart">
+              <span>
+                <p>{context?.state?.cart?.length}</p>
+              </span>
+              <ShoppingIcon />
+            </Link>
+          </span>
         </nav>
       </div>
     </header>
