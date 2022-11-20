@@ -42,6 +42,9 @@ const Navbar = () => {
             ))}
             <span className="nav__icon">
               <Link to="/cart">
+                <span className="nav__icon__length" style={{ color: "white" }}>
+                  {context?.state?.cart?.length}
+                </span>
                 <ShoppingIcon />
               </Link>
             </span>
