@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   &__container {
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px;
+    padding: 3.125rem;
     -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 1);
     -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 1);
     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 1);
@@ -28,7 +28,7 @@
     }
   }
   &__right {
-    padding: 50px;
+    padding: 3.125rem;
     &__title {
       > h3 {
         text-transform: uppercase;
@@ -37,7 +37,7 @@
       }
     }
     &__price {
-      padding-block: 20px;
+      padding-block: 1.25rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -52,7 +52,7 @@
     }
     &__reviews {
       > p {
-        margin-right: 20px;
+        margin-right: 1.25rem;
       }
     }
     &__description {
@@ -62,13 +62,13 @@
       }
     }
     &__btn {
-      max-width: 300px;
-      margin-top: 30px;
+      max-width: 18.75rem;
+      margin-top: 1.875rem;
       > button {
         width: 100%;
         background-color: #000;
         cursor: pointer;
-        height: 60px;
+        height: 3.75rem;
         font-size: 1rem;
         font-weight: 300;
         color: #f9f9f9;
