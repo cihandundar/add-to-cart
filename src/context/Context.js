@@ -52,9 +52,15 @@ export function CartProvider({ children }) {
     });
   };
 
+  const removeFromCart = (id) =>
+    setState({
+      ...state,
+      cart: state.cart.filter((cartItem) => cartItem.id !== id),
+    });
+
   return (
     <CartContext.Provider
-      value={{ state: state, addToCart, increase, decrease }}
+      value={{ state: state, addToCart, increase, decrease, removeFromCart }}
     >
       {children}
     </CartContext.Provider>
