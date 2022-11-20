@@ -1,8 +1,7 @@
-import Descrease from "assets/icons/Descrease";
-import Increase from "assets/icons/Increase";
-import CartContext from "context/Context";
 import React from "react";
+import CartContext from "context/Context";
 import { useContext } from "react";
+import { Descrease, Increase } from "assets/icons";
 
 const Cart = () => {
   const context = useContext(CartContext);
