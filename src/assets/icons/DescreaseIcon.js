@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const Descrease = (props) => (
+const DescreaseIcon = (props) => (
   <svg
     width={props.width || 20}
     height={props.height || 20}
@@ -21,4 +21,4 @@ const Descrease = (props) => (
   </svg>
 );
 
-export default Descrease;
+export default DescreaseIcon;
