@@ -40,6 +40,9 @@ const Product = () => {
                   <p>{shopping?.description}</p>
                 </div>
                 <span>{shopping?.price} $</span>
+                <div className="wrapper__text__mobile">
+                  <p>{shopping?.price} $</p>
+                </div>
               </div>
             </Link>
             <div className="btn">
