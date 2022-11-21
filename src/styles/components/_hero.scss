@@ -3,6 +3,9 @@
   align-items: center;
   justify-content: space-around;
   padding-block: 2.5rem;
+  @include breakpoint(md) {
+    flex-direction: column;
+  }
   &__img {
     height: 28.125rem;
     > img {

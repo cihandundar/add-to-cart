@@ -8,6 +8,13 @@
   }
   &__container {
     display: flex;
+    @include breakpoint(md) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @include breakpoint(sm) {
+      padding: 30px;
+    }
   }
   &__content {
     border: 1px solid #000;
@@ -17,6 +24,16 @@
     -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 1);
     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 1);
     border-radius: 6px;
+    @include breakpoint(md) {
+      width: 19rem;
+    }
+    @include breakpoint(sm) {
+      width: 14rem;
+      margin: 1rem;
+    }
+    @include breakpoint(sm) {
+      width: 100%;
+    }
   }
   &__title {
     > h3 {

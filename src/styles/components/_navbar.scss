@@ -8,6 +8,24 @@
     max-width: 75rem;
     margin: 0 auto;
     position: relative;
+    @include breakpoint(l) {
+      max-width: 1000px;
+    }
+    @include breakpoint(md) {
+      max-width: 800px;
+    }
+    @include breakpoint(sm) {
+      max-width: 600px;
+    }
+    @include breakpoint(sm) {
+      max-width: 400px;
+    }
+    @include breakpoint(xxs) {
+      max-width: 300px;
+    }
+    @include breakpoint(xss) {
+      max-width: 350px;
+    }
   }
 }
 
@@ -15,6 +33,45 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @include breakpoint(sm) {
+    position: fixed;
+    z-index: 10;
+    top: -100vh;
+    left: 0;
+    height: 50%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: #000;
+    transition: 1s;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  @include breakpoint(xs) {
+    width: 80%;
+  }
+  &__btn {
+    display: none;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    position: relative;
+    padding: 5px;
+    width: 30px;
+    border-radius: 6px;
+    @include breakpoint(sm) {
+      display: block;
+    }
+  }
+
+  &__closebtn {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+  }
 
   &__logo {
     > a {
@@ -35,19 +92,29 @@
   }
   &__list {
     display: flex;
+    @include breakpoint(sm) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__link {
     font-weight: 200;
     &:last-child {
       margin-right: 50px;
+      @include breakpoint(sm) {
+        margin-right: 0;
+      }
     }
     &:not(:last-child) {
       margin-right: 2.5rem;
+      @include breakpoint(sm) {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
     }
     > a {
       position: relative;
       color: #f9f9f9;
-
       &::after {
         content: "";
         position: absolute;
@@ -67,6 +134,7 @@
   &__icon {
     cursor: pointer;
     position: absolute;
+    z-index: 11;
     right: 0;
     top: 3px;
     > a {
@@ -87,5 +155,10 @@
         }
       }
     }
+  }
+}
+.responsive_nav {
+  @include breakpoint(sm) {
+    top: 0;
   }
 }
