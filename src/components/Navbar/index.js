@@ -41,15 +41,15 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <span className="nav__icon">
-            <Link to="/cart">
-              <span>
-                <p>{context?.state?.cart?.length}</p>
-              </span>
-              <ShoppingIcon />
-            </Link>
-          </span>
         </nav>
+        <span className="nav__icon">
+          <Link to="/cart">
+            <span>
+              <p>{context?.state?.cart?.length}</p>
+            </span>
+            <ShoppingIcon />
+          </Link>
+        </span>
       </div>
     </header>
   );
