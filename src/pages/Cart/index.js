@@ -5,11 +5,13 @@ import { DescreaseIcon, IncreaseIcon, RemoveIcon } from "assets/icons";
 
 const Cart = () => {
   const context = useContext(CartContext);
-  const { decrease, increase, removeFromCart } = useContext(CartContext);
+  const { decrease, increase, removeFromCart, totalCart } =
+    useContext(CartContext);
   console.log(context.state.cart.map((item) => item));
 
   return (
     <section className="cart">
+      <h1>{totalCart}</h1>
       <div className="cart__container">
         {context?.state?.cart?.map((item) => (
           <div className="cart__content">
@@ -23,18 +25,18 @@ const Cart = () => {
                 <div className="cart__price">
                   <p>
                     Subtotal ( {item?.count} items ) : $
-                    {item?.price * item?.count}
+                    {(item?.price * item?.count).toFixed(2)}
                   </p>
                 </div>
               </div>
             </div>
             <div className="cart__btn">
-              <button onClick={() => increase(item.id)}>
-                <IncreaseIcon />
-              </button>
-              <span>{item?.count}</span>
               <button onClick={() => decrease(item.id)}>
                 <DescreaseIcon />
+              </button>
+              <span>{item?.count}</span>
+              <button onClick={() => increase(item.id)}>
+                <IncreaseIcon />
               </button>
             </div>
             <button onClick={() => removeFromCart(item.id)} className="remove">

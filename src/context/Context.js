@@ -58,9 +58,23 @@ export function CartProvider({ children }) {
       cart: state.cart.filter((cartItem) => cartItem.id !== id),
     });
 
+  const totalCart = state.cart
+    .reduce(
+      (total, shopping) => (total = total + shopping.price * shopping.count),
+      0
+    )
+    .toFixed(2);
+
   return (
     <CartContext.Provider
-      value={{ state: state, addToCart, increase, decrease, removeFromCart }}
+      value={{
+        state: state,
+        addToCart,
+        increase,
+        decrease,
+        removeFromCart,
+        totalCart,
+      }}
     >
       {children}
     </CartContext.Provider>
