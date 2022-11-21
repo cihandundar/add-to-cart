@@ -20,11 +20,11 @@
     @include breakpoint(sm) {
       max-width: 400px;
     }
-    @include breakpoint(xxs) {
-      max-width: 300px;
-    }
+    // @include breakpoint(xxs) {
+    //   max-width: 300px;
+    // }
     @include breakpoint(xss) {
-      max-width: 350px;
+      max-width: 300px;
     }
   }
 }
