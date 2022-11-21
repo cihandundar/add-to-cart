@@ -68,7 +68,9 @@ const Cart = () => {
           </div>
           <div className="empty__text">
             <h4>Your cart is currently empty!</h4>
-            <Link to="/">Return to Home</Link>
+            <Link to="/">
+              <button>Return to Home</button>
+            </Link>
           </div>
         </div>
       )}
