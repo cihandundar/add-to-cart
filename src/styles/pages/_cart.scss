@@ -1,14 +1,17 @@
 .cart {
   padding-block: 1.25rem;
   min-height: 100vh;
-  &__container {
+  &__main {
+    display: flex;
     max-width: 75rem;
     margin: 0 auto;
+    position: relative;
+  }
+  &__container {
     display: flex;
     flex-wrap: wrap;
   }
   &__content {
-    border: 1px solid #000;
     margin: 1.56rem;
     width: 21.87rem;
     padding: 1.25rem;
@@ -75,6 +78,42 @@
       border: none;
       background: none;
       cursor: pointer;
+      > svg {
+        border-radius: 50%;
+        &:hover {
+          background: gainsboro;
+        }
+      }
+    }
+  }
+
+  &__total {
+    width: 100px;
+    &__btn {
+      width: 100%;
+      height: 60px;
+      border-radius: 6px;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-block: 20px;
+      > a {
+        color: #f9f9f9;
+        font-weight: 300;
+        letter-spacing: 2px;
+      }
+    }
+    &__border {
+      position: absolute;
+      right: 0;
+      margin-top: 1.56rem;
+      width: 300px;
+      padding: 20px 20px 10px 20px;
+      -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 1);
+      -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 1);
+      box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 1);
+      border-radius: 0.5rem;
     }
   }
 }
@@ -86,7 +125,44 @@
   position: absolute;
   right: 15px;
   top: 15px;
-  border: 2px solid #000;
+  border: 1px solid #000;
+  border-radius: 50%;
   background: none;
   cursor: pointer;
+  &:hover {
+    background: gainsboro;
+  }
+}
+
+.empty {
+  max-width: 75rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  &__image {
+    width: 400px;
+    img {
+      width: 100%;
+    }
+  }
+  &__text {
+    h4 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+    > a {
+      background: #ff735c;
+      padding-block: 10px;
+      border-radius: 30px;
+      font-weight: 500;
+      letter-spacing: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffff;
+    }
+  }
 }
