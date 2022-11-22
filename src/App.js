@@ -9,7 +9,7 @@ import "react-toastify/dist/ReactToastify.css";
 function App() {
   return (
     <CartProvider>
-      <ToastContainer autoClose={1000} theme="dark" position="bottom-right" />
+      <ToastContainer autoClose={1100} theme="dark" position="bottom-right" />
       <BrowserRouter>
         <Navbar />
         <Routes>
