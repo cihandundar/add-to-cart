@@ -18,9 +18,11 @@ const Cart = () => {
             {context?.state?.cart?.map((item) => (
               <div className="cart__content">
                 <div className="cart__content__wrapper">
-                  <div className="cart__content__img">
-                    <img src={item?.image} alt="" />
-                  </div>
+                  <Link to={`/products/${item?.id}`}>
+                    <div className="cart__content__img">
+                      <img src={item?.image} alt="" />
+                    </div>
+                  </Link>
                   <div className="cart__content__title">
                     <h4>{item?.title}</h4>
                     <span>Price : $ {item?.price}</span>
