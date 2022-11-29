@@ -1,3 +1,30 @@
+<div align="center">
+
+#### E-Commerce app using React.js + Fake Store API.
+
+</div>
+
+<div align="center">
+
+#### [Click for Website](https://add-to-cart-eight.vercel.app/)
+
+</div>
+  
+</div>
+
+### Tools
+
+- React.js
+- SASS / SCSS
+- React Router v6
+- Axios for API calls
+- Pass data from parent to children using Context API instead of props
+- Using LocalStorage for save value in browser
+- Get products using Fake Store API
+- React Icons
+- React Toastify for Notifications
+
+
 ![shopping-1](https://user-images.githubusercontent.com/94462152/204258015-e26aa4b1-929a-4c43-abcc-750b4d03841a.jpg)
 ____________________________________________________________________________________________________________________
 ![shopping-2](https://user-images.githubusercontent.com/94462152/204258037-b84727a4-717d-47e0-b0d8-546913825952.jpg)
