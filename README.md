@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+<div align="center">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### E-Commerce app using React.js + Fake Store API.
 
-## Available Scripts
+</div>
 
-In the project directory, you can run:
+<div align="center">
 
-### `npm start`
+#### [Click for Website](https://add-to-cart-eight.vercel.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+</div>
+  
+</div>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Tools
 
-### `npm test`
+- React.js
+- SASS / SCSS
+- React Router v6
+- Axios for API calls
+- Pass data from parent to children using Context API instead of props
+- Using LocalStorage for save value in browser
+- Get products using Fake Store API
+- React Icons
+- React Toastify for Notifications
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+![shopping-1](https://user-images.githubusercontent.com/94462152/204258015-e26aa4b1-929a-4c43-abcc-750b4d03841a.jpg)
+____________________________________________________________________________________________________________________
+![shopping-2](https://user-images.githubusercontent.com/94462152/204258037-b84727a4-717d-47e0-b0d8-546913825952.jpg)
+____________________________________________________________________________________________________________________
+![shopping-4](https://user-images.githubusercontent.com/94462152/204258209-b9144e5e-078a-43fd-a411-b8503bb73060.jpg)
+____________________________________________________________________________________________________________________
+![shopping-3](https://user-images.githubusercontent.com/94462152/204258159-835091a9-0950-465a-95c7-60eb7f19f246.jpg)
+____________________________________________________________________________________________________________________
+![shopping-5](https://user-images.githubusercontent.com/94462152/204258341-5e88bca1-a047-4e41-b879-32968caa0699.jpg)
+____________________________________________________________________________________________________________________
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![shopping-6](https://user-images.githubusercontent.com/94462152/204258363-b14eac5c-9976-4e8d-a116-41e58f5207b4.jpg)
+____________________________________________________________________________________________________________________
+![shopping-7](https://user-images.githubusercontent.com/94462152/204258378-a85ad59e-2d13-47ab-b989-3df0f6bdf2a0.jpg)
+____________________________________________________________________________________________________________________
+![shopping-8](https://user-images.githubusercontent.com/94462152/204258411-b1cd2ec1-7fde-46dc-b9d1-2a1d32be38ee.jpg)
+![shopping-9](https://user-images.githubusercontent.com/94462152/204259209-5fdef9ca-7b6f-4356-a393-390a048e2b96.jpg)
+![shopping-10](https://user-images.githubusercontent.com/94462152/204258447-b35cccab-10d6-4376-b7c4-f7e3fcc934e1.jpg)
+![shopping-11](https://user-images.githubusercontent.com/94462152/204258540-a1978450-7d4b-4a85-89fb-7c85102bde7e.jpg)
+![shopping-12](https://user-images.githubusercontent.com/94462152/204258558-3a0186f1-f846-40ee-8e35-235fdfc61402.jpg)
