@@ -20,7 +20,7 @@ const Cart = () => {
                 <div className="cart__content__wrapper">
                   <Link to={`/products/${item?.id}`}>
                     <div className="cart__content__img">
-                      <img src={item?.image} alt="" />
+                      <img src={item?.thumbnail} alt="" />
                     </div>
                   </Link>
                   <div className="cart__content__title">
