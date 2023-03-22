@@ -11,7 +11,7 @@ const ProductDetails = () => {
 
   useEffect(() => {
     axios
-      .get(`https://fakestoreapi.com/products/${id}`)
+      .get(`https://dummyjson.com/products/${id}`)
       .then((response) => setProductData(response.data));
   }, [id]);
   console.log(productData);
@@ -20,7 +20,7 @@ const ProductDetails = () => {
       <div className="details__container">
         <div className="details__left">
           <div className="details__left__img">
-            <img src={productData?.image} alt="" />
+            <img src={productData?.thumbnail} alt="" />
           </div>
         </div>
         <div className="details__right">
@@ -31,7 +31,7 @@ const ProductDetails = () => {
             <p>{productData?.price} $</p>
             <div className="details__right__rating">
               <div className="details__right__rating__center">
-                <span>{productData?.rating?.rate}</span>
+                <span>{productData?.rating}</span>
                 <div className="details__right__rating__icon">
                   <span>
                     <StarIcon />

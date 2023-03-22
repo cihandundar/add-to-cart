@@ -15,7 +15,7 @@ const Product = () => {
 
   useEffect(() => {
     axios
-      .get(`https://fakestoreapi.com/products`)
+      .get(`https://dummyjson.com/products`)
       .then((response) => setItem(response.data));
   }, []);
 
@@ -26,12 +26,12 @@ const Product = () => {
           <img src={Spinner} alt="" />
         </div>
       ) : (
-        item?.map((shopping) => (
+        item?.products?.map((shopping) => (
           <div key={shopping?.id} className="content">
             <Link to={`/products/${shopping?.id}`}>
               <div className="wrapper">
                 <div className="wrapper__image">
-                  <img src={shopping?.image} alt={shopping?.name} />
+                  <img src={shopping?.thumbnail} alt={shopping?.name} />
                 </div>
                 <div className="wrapper__title">
                   <h4>{shopping?.title}</h4>
